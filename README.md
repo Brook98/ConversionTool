@@ -8,7 +8,11 @@ The Unit Conversion Tool allows users to easily convert between different units 
 
 ## Installation
 
-To run this project, it is necessary to have R installed on your machine. Clone this repository, and then follow the steps below:
+There are two ways to run this project: directly in R or using Docker.
+
+### Using R
+
+To run this project directly in R, it is necessary to have R installed on the machine. Clone this repository, and then follow the steps below:
 
 ### Using renv
 
@@ -36,7 +40,18 @@ To run the Unit Conversion Tool, the necessary packages are needed. After instal
 ```r
 shiny::runApp("app.R")
 ```
+### Using Docker 
+#### Pull the Docker Image
+The Docker image for this app is available on Docker Hub. To pull and run it use the following commands:
 
+```bash
+# Pull the Docker image from Docker Hub
+docker pull brooktutu/conversiontool
+
+# Run the Docker container
+docker run -p 8080:8080 brooktutu/conversiontool
+```
+After running these commands, the app will be accessible at http://localhost:8080 in the web browser.
 ## Running the Tests
 
 To ensure the reliability of the conversion functions, automated tests are included. To run these tests:
