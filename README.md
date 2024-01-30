@@ -46,10 +46,10 @@ The Docker image for this app is available on Docker Hub. To pull and run it use
 
 ```bash
 # Pull the Docker image from Docker Hub
-docker pull brooktutu/conversiontool
+docker pull brooktutu/conversiontool:v1.0
 
 # Run the Docker container
-docker run -p 8080:8080 brooktutu/conversiontool
+docker run -p 8080:8080 brooktutu/conversiontool:v1.0
 ```
 After running these commands, the app will be accessible at http://localhost:8080 in the web browser.
 ## Running the Tests
